@@ -1,0 +1,22 @@
+<svg width="760" height="280" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" font-family="Plus Jakarta Sans, Segoe UI, sans-serif">
+  <rect width="760" height="280" fill="#f5f7f9"/>
+  <text x="24" y="30" font-size="15" font-weight="700" fill="#17293b">Anatomi program Dart "Hello, World"</text>
+  <rect x="40" y="52" width="380" height="150" rx="12" fill="#14232f"/>
+  <g font-family="JetBrains Mono, monospace" font-size="15" fill="#d7e3ea">
+    <text x="60" y="86"><tspan fill="#7aa2b8">// Program pertama</tspan></text>
+    <text x="60" y="114"><tspan fill="#e0b062">void</tspan> <tspan fill="#7ec8e3">main</tspan>() {</text>
+    <text x="88" y="142"><tspan fill="#7ec8e3">print</tspan>(<tspan fill="#9ece9e">'Hello, World'</tspan>);</text>
+    <text x="60" y="170">}</text>
+  </g>
+  <g font-size="12">
+    <line x1="220" y1="78" x2="470" y2="78" stroke="#9aa9b6" stroke-dasharray="3 3"/>
+    <text x="478" y="82" fill="#6a7a8a"><tspan font-weight="700" fill="#17293b">Komentar</tspan> — catatan untuk manusia</text>
+    <line x1="180" y1="106" x2="470" y2="106" stroke="#9aa9b6" stroke-dasharray="3 3"/>
+    <text x="478" y="110" fill="#6a7a8a"><tspan font-weight="700" fill="#17293b">fungsi main()</tspan> — titik awal program</text>
+    <line x1="300" y1="134" x2="470" y2="134" stroke="#9aa9b6" stroke-dasharray="3 3"/>
+    <text x="478" y="138" fill="#6a7a8a"><tspan font-weight="700" fill="#17293b">pernyataan</tspan> — 1 perintah, diakhiri <tspan font-family="JetBrains Mono, monospace">;</tspan></text>
+    <line x1="240" y1="162" x2="470" y2="162" stroke="#9aa9b6" stroke-dasharray="3 3"/>
+    <text x="478" y="166" fill="#6a7a8a"><tspan font-weight="700" fill="#17293b">{ }</tspan> — awal &amp; akhir blok kode</text>
+  </g>
+  <text x="40" y="238" font-size="12" fill="#6a7a8a">Dart membedakan huruf besar/kecil, teks diapit tanda kutip, tiap pernyataan diakhiri titik koma.</text>
+</svg>

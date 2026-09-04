@@ -1,0 +1,31 @@
+<svg width="460" height="620" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 620" font-family="Plus Jakarta Sans, Segoe UI, sans-serif" font-size="13">
+  <rect width="460" height="620" fill="#ffffff"/>
+  <defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8091a0"/></marker></defs>
+  <g stroke="#8091a0" stroke-width="1.6" fill="none" marker-end="url(#a)">
+    <line x1="180" y1="56" x2="180" y2="78"/>
+    <line x1="180" y1="126" x2="180" y2="150"/>
+    <line x1="180" y1="230" x2="180" y2="252"/>
+    <line x1="180" y1="300" x2="180" y2="326"/>
+    <line x1="180" y1="404" x2="180" y2="430"/>
+    <line x1="180" y1="482" x2="180" y2="524"/>
+    <path d="M258,190 H360 V300 H262"/>
+    <path d="M255,366 H392 V552 H262"/>
+  </g>
+  <g text-anchor="middle" fill="#17293b">
+    <ellipse cx="180" cy="40" rx="66" ry="17" fill="#e6f6ec" stroke="#16a34a"/><text x="180" y="45">Mulai</text>
+    <rect x="96" y="80" width="168" height="46" rx="8" fill="#eaf1ff" stroke="#2563eb"/><text x="180" y="108">Lampu tidak menyala</text>
+    <path d="M180,150 L272,190 L180,230 L88,190 Z" fill="#fdf1e3" stroke="#d97706"/><text x="180" y="188">Terpasang di</text><text x="180" y="204" font-size="11">stopkontak?</text>
+    <path d="M180,252 L272,300 L180,348 L88,300 Z" fill="#fdf1e3" stroke="#d97706"/><text x="180" y="298">Bohlam</text><text x="180" y="313" font-size="11">putus?</text>
+    <path d="M180,326 L272,366 L180,406 L88,366 Z" fill="#fdf1e3" stroke="#d97706"/><text x="180" y="364">Sudah</text><text x="180" y="379" font-size="11">menyala?</text>
+    <rect x="96" y="432" width="168" height="46" rx="8" fill="#eaf1ff" stroke="#2563eb"/><text x="180" y="460">Panggil teknisi listrik</text>
+    <ellipse cx="180" cy="542" rx="66" ry="17" fill="#e6f6ec" stroke="#16a34a"/><text x="180" y="547">Selesai</text>
+    <rect x="300" y="240" width="120" height="40" rx="8" fill="#f4f7fa" stroke="#cbd7e2"/><text x="360" y="264" font-size="12">Pasang stekernya</text>
+    <rect x="332" y="300" width="120" height="40" rx="8" fill="#f4f7fa" stroke="#cbd7e2"/><text x="392" y="324" font-size="12">Ganti bohlam</text>
+  </g>
+  <g font-size="11" fill="#6a7a8a">
+    <text x="200" y="246">ya</text><text x="284" y="186">tidak</text>
+    <text x="200" y="322">tidak</text><text x="284" y="296">ya</text>
+    <text x="284" y="362">ya</text><text x="200" y="424">tidak</text>
+  </g>
+  <text x="180" y="600" text-anchor="middle" font-size="11" fill="#6a7a8a">kotak = langkah aksi  ·  belah ketupat = keputusan (ya / tidak)</text>
+</svg>

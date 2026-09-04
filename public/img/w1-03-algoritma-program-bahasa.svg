@@ -1,0 +1,29 @@
+<svg width="760" height="260" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" font-family="Plus Jakarta Sans, Segoe UI, sans-serif">
+  <rect width="760" height="260" fill="#f5f7f9"/>
+  <text x="24" y="32" font-size="15" font-weight="700" fill="#17293b">Algoritma → Bahasa Pemrograman → Program</text>
+  <defs><marker id="b" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#6a7a8a"/></marker></defs>
+  <g text-anchor="middle" font-size="12">
+    <rect x="30" y="70" width="200" height="120" rx="12" fill="#eaf1ff" stroke="#2563eb"/>
+    <text x="130" y="98" font-weight="700" fill="#17293b" font-size="14">Algoritma</text>
+    <text x="130" y="124" fill="#6a7a8a">ide penyelesaian</text>
+    <text x="130" y="142" fill="#6a7a8a">masalah — bahasa</text>
+    <text x="130" y="160" fill="#6a7a8a">manusia / flowchart</text>
+
+    <rect x="280" y="70" width="200" height="120" rx="12" fill="#e4f6f7" stroke="#0ea5b0"/>
+    <text x="380" y="98" font-weight="700" fill="#17293b" font-size="14">Bahasa Pemrograman</text>
+    <text x="380" y="124" fill="#6a7a8a">aturan sintaks untuk</text>
+    <text x="380" y="142" fill="#6a7a8a">menulis program</text>
+    <text x="380" y="160" fill="#6a7a8a">(Dart, C, Python, …)</text>
+
+    <rect x="530" y="70" width="200" height="120" rx="12" fill="#e6f6ec" stroke="#16a34a"/>
+    <text x="630" y="98" font-weight="700" fill="#17293b" font-size="14">Program</text>
+    <text x="630" y="124" fill="#6a7a8a">algoritma yang sudah</text>
+    <text x="630" y="142" fill="#6a7a8a">ditulis &amp; siap</text>
+    <text x="630" y="160" fill="#6a7a8a">dijalankan komputer</text>
+  </g>
+  <g stroke="#6a7a8a" stroke-width="2" marker-end="url(#b)">
+    <line x1="232" y1="130" x2="276" y2="130"/>
+    <line x1="482" y1="130" x2="526" y2="130"/>
+  </g>
+  <text x="380" y="228" text-anchor="middle" font-size="12" fill="#6a7a8a">Analogi: langkah di kepala koki → bahasa penulisan resep → resep jadi yang bisa diikuti</text>
+</svg>

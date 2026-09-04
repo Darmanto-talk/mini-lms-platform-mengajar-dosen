@@ -1,0 +1,28 @@
+<svg width="760" height="260" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" font-family="Plus Jakarta Sans, Segoe UI, sans-serif">
+  <rect width="760" height="260" fill="#f5f7f9"/>
+  <text x="24" y="32" font-size="15" font-weight="700" fill="#17293b">Satu bahasa Dart — tiga cara memakainya</text>
+  <defs><marker id="c" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#6a7a8a"/></marker></defs>
+  <g text-anchor="middle">
+    <circle cx="130" cy="140" r="52" fill="#e4f6f7" stroke="#0ea5b0" stroke-width="2"/>
+    <text x="130" y="138" font-size="15" font-weight="800" fill="#0b7f88">Dart</text>
+    <text x="130" y="156" font-size="11" fill="#6a7a8a">kode .dart</text>
+  </g>
+  <g stroke="#6a7a8a" stroke-width="2" marker-end="url(#c)" fill="none">
+    <line x1="185" y1="115" x2="330" y2="70"/>
+    <line x1="188" y1="140" x2="330" y2="140"/>
+    <line x1="185" y1="165" x2="330" y2="210"/>
+  </g>
+  <g text-anchor="middle" font-size="12">
+    <rect x="335" y="46" width="200" height="48" rx="10" fill="#eaf1ff" stroke="#2563eb"/>
+    <text x="435" y="68" font-weight="700" fill="#17293b">DartPad</text>
+    <text x="435" y="84" font-size="11" fill="#6a7a8a">editor online, tanpa instalasi</text>
+
+    <rect x="335" y="116" width="200" height="48" rx="10" fill="#eaf1ff" stroke="#2563eb"/>
+    <text x="435" y="138" font-weight="700" fill="#17293b">dart run / dart compile</text>
+    <text x="435" y="154" font-size="11" fill="#6a7a8a">jalankan di komputer sendiri</text>
+
+    <rect x="335" y="186" width="200" height="48" rx="10" fill="#eaf1ff" stroke="#2563eb"/>
+    <text x="435" y="208" font-weight="700" fill="#17293b">Flutter</text>
+    <text x="435" y="224" font-size="11" fill="#6a7a8a">aplikasi mobile &amp; web</text>
+  </g>
+</svg>

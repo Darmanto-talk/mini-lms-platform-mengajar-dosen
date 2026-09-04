@@ -1,0 +1,646 @@
+{
+    "name": "Algoritma dan Pemrograman",
+    "description": "Mata kuliah Algoritma dan Pemrograman menggunakan bahasa Dart. Notasi algoritmik, tipe data, struktur kontrol, koleksi, fungsi, rekursi, hingga searching & sorting dasar.",
+    "weeks": [
+        {
+            "number": 1,
+            "title": "Pengantar Algoritma & Pemrograman",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Apa itu algoritma? Ciri dan contoh sehari-hari",
+                    "type": "materi",
+                    "xp": 10,
+                    "content": "## Apa itu algoritma?\n\nAlgoritma adalah **urutan langkah-langkah logis** untuk menyelesaikan suatu masalah. Sebuah algoritma yang baik memiliki ciri:\n\n- Setiap langkah jelas dan tidak ambigu\n- Memiliki masukan (input) dan keluaran (output)\n- Jumlah langkahnya berhingga (pasti berakhir)\n- Efektif — setiap langkah bisa benar-benar dikerjakan\n\n## Contoh sehari-hari\n\nDiagram alur di bawah menggambarkan algoritma sederhana \"memperbaiki lampu yang tidak menyala\":\n\n![Diagram alur memperbaiki lampu](img/flowchart-lampu.svg)\n\nPerhatikan bahwa setiap kotak adalah satu langkah, dan setiap belah ketupat adalah sebuah keputusan (ya/tidak)."
+                },
+                {
+                    "title": "Sejarah singkat & peran pemrograman",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Cara berpikir komputasional (computational thinking)",
+                    "type": "video",
+                    "xp": 10,
+                    "content": "Simak video pengantar berikut tentang apa itu algoritma dan mengapa penting bagi ilmu komputer.\n\nhttps://www.youtube.com/watch?v=6hfOvs8pY1k\n\nSetelah menonton, catat: menurut Anda, apa perbedaan algoritma dengan program?",
+                    "video_url": "https://www.youtube.com/watch?v=6hfOvs8pY1k"
+                },
+                {
+                    "title": "Bahasa pemrograman: compiler, interpreter, dan Dart VM",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Menyiapkan lingkungan kerja: Dart SDK & editor",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Program pertama: \"Hello, World\" dengan print()",
+                    "type": "latihan",
+                    "xp": 15,
+                    "content": "Mari menulis program Dart pertama. Program di bawah menampilkan tulisan ke layar dengan fungsi `print()`.\n\n```dart\nvoid main() {\n  print(\"Hello, World\");\n}\n```\n\nCoba jalankan editor di bawah ini, lalu ubah teksnya menjadi nama Anda sendiri dan jalankan lagi.",
+                    "dartpad_gist": ""
+                },
+                {
+                    "title": "Anatomi program Dart: fungsi main()",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Komentar & gaya penulisan kode yang rapi",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Menjalankan kode: dart run & dart compile",
+                    "type": "video",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: menampilkan biodata diri",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                },
+                {
+                    "title": "Tugas 1: Algoritma kegiatan sehari-hari",
+                    "type": "tugas",
+                    "xp": 20,
+                    "max_score": 100,
+                    "rubric": "Langkah lengkap & berurutan (40), ada minimal satu percabangan yang tepat (30), tidak ambigu / jelas (30).",
+                    "content": "## Instruksi\n\nPilih **satu** kegiatan sehari-hari (mis. menyeduh kopi, berangkat kuliah, mengisi pulsa). Tuliskan algoritmanya dalam bentuk **pseudocode** minimal 6 langkah dan mengandung **minimal satu percabangan** (langkah keputusan ya/tidak).\n\n## Cara mengumpulkan\n\n- Tulis pseudocode di kolom **Jawaban** (boleh pakai blok ```text ... ```), ATAU\n- Unggah **berkas** foto/scan flowchart atau dokumen (pdf/doc/gambar).\n\nBatas waktu: sesuai kesepakatan kelas."
+                },
+                {
+                    "title": "Kuis Minggu 1",
+                    "type": "kuis",
+                    "xp": 50,
+                    "quiz": {
+                        "time_limit_min": 15,
+                        "pass_score": 70,
+                        "max_attempts": 2,
+                        "xp": 50,
+                        "questions": []
+                    }
+                }
+            ]
+        },
+        {
+            "number": 2,
+            "title": "Notasi Algoritmik: Flowchart & Pseudocode",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Simbol-simbol flowchart standar",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Menerjemahkan masalah menjadi flowchart",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Menulis pseudocode yang jelas",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Dari pseudocode ke kode Dart",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: flowchart konversi suhu",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 3,
+            "title": "Tipe Data, Variabel, Konstanta & Operator",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Tipe data dasar Dart: int, double, String, bool",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "var, final, dan const",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Operator aritmatika & presedensi",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Operator perbandingan & logika",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "String interpolation ($ dan ${})",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: kalkulator sederhana",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 4,
+            "title": "Input/Output & Ekspresi Aritmatika",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Menampilkan keluaran dengan print()",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Membaca masukan dengan stdin.readLineSync()",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Konversi tipe: int.parse, double.parse",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Menyusun ekspresi aritmatika",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: hitung luas & keliling",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 5,
+            "title": "Struktur Percabangan: if, if-else, switch",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Pernyataan if dan if-else",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "if-else bertingkat (else if)",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Operator kondisional ?: ",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "switch-case dan pattern sederhana",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Studi kasus: penentuan nilai huruf",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: klasifikasi bilangan",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "title": "Struktur Perulangan: for, while, do-while",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Konsep perulangan & variabel pencacah",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Perulangan for",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Perulangan while & do-while",
+                    "type": "materi",
+                    "xp": 20,
+                    "content": "Perulangan (loop) dipakai ketika sekelompok instruksi harus dijalankan berulang selama sebuah kondisi terpenuhi.\n\n## Perulangan while\n\nKondisi diperiksa **sebelum** badan perulangan dijalankan.\n\n```dart\nvoid main() {\n  var i = 1;\n  while (i <= 5) {\n    print(\"Iterasi ke-$i\");\n    i++;\n  }\n}\n```\n\n## Perulangan do-while\n\nBadan perulangan dijalankan **dulu satu kali**, baru kondisi diperiksa. Cocok untuk menu yang minimal tampil sekali.\n\nCoba modifikasi editor di bawah: ubah batas perulangan dari 5 menjadi 10.",
+                    "dartpad_gist": ""
+                },
+                {
+                    "title": "Kata kunci break & continue",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "for-in untuk koleksi",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: deret & tabel perkalian",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                },
+                {
+                    "title": "Kuis Minggu 6: Struktur Perulangan",
+                    "type": "kuis",
+                    "xp": 50,
+                    "quiz": {
+                        "time_limit_min": 15,
+                        "pass_score": 70,
+                        "max_attempts": 2,
+                        "xp": 50,
+                        "questions": [
+                            {
+                                "text": "Perhatikan potongan kode Dart berikut. Berapa kali teks 'Halo' dicetak ke layar?",
+                                "code": "for (var i = 0; i < 5; i++) {\n  print('Halo');\n}",
+                                "options": [
+                                    "4 kali",
+                                    "5 kali",
+                                    "6 kali",
+                                    "Tak hingga (perulangan tak berujung)"
+                                ],
+                                "answer": 1
+                            },
+                            {
+                                "text": "Apa perbedaan utama perulangan while dan do-while?",
+                                "options": [
+                                    "do-while memeriksa kondisi di akhir sehingga badan pasti jalan minimal sekali",
+                                    "while lebih cepat daripada do-while",
+                                    "do-while tidak boleh memakai variabel pencacah",
+                                    "Tidak ada perbedaan, keduanya sama persis"
+                                ],
+                                "answer": 0
+                            },
+                            {
+                                "text": "Kata kunci apa yang dipakai untuk menghentikan perulangan secara paksa?",
+                                "options": [
+                                    "stop",
+                                    "exit",
+                                    "break",
+                                    "return"
+                                ],
+                                "answer": 2
+                            },
+                            {
+                                "text": "Berapa nilai akhir variabel s setelah kode berikut dijalankan?",
+                                "code": "var s = 0;\nfor (var i = 1; i <= 4; i++) {\n  s += i;\n}",
+                                "options": [
+                                    "4",
+                                    "10",
+                                    "24",
+                                    "0"
+                                ],
+                                "answer": 1
+                            },
+                            {
+                                "text": "Manakah pernyataan yang benar tentang perulangan for-in di Dart?",
+                                "code": "for (var x in [2, 4, 6]) {\n  print(x);\n}",
+                                "options": [
+                                    "Digunakan untuk iterasi pada setiap elemen koleksi",
+                                    "Hanya bisa dipakai untuk angka",
+                                    "Selalu berjalan tepat 10 kali",
+                                    "Sama dengan do-while"
+                                ],
+                                "answer": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "title": "Perulangan Bersarang & Studi Kasus",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Perulangan di dalam perulangan",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Membuat pola bintang",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Studi kasus: matriks sederhana",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: pola segitiga angka",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "title": "UTS: Kuis Komprehensif & Tugas Besar 1",
+            "is_exam": true,
+            "lessons": [
+                {
+                    "title": "Kisi-kisi & aturan UTS",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Kuis Komprehensif UTS",
+                    "type": "kuis",
+                    "xp": 100,
+                    "quiz": {
+                        "time_limit_min": 45,
+                        "pass_score": 70,
+                        "max_attempts": 2,
+                        "xp": 100,
+                        "questions": []
+                    }
+                },
+                {
+                    "title": "Pengumpulan Tugas Besar 1",
+                    "type": "tugas",
+                    "xp": 50,
+                    "max_score": 100,
+                    "content": "## Ketentuan Tugas Besar 1\n\nBuat program Dart yang menyelesaikan satu kasus dunia nyata pilihan Anda (mis. kalkulator BMI, konversi mata uang, statistik nilai). Wajib memakai: percabangan, perulangan, dan minimal satu fungsi buatan sendiri.\n\n## Yang dikumpulkan\n\n- Tautan gist/repositori berisi kode `.dart`\n- Penjelasan singkat cara kerja program (tulis di kolom jawaban)\n\nBatas pengumpulan: [ISI TANGGAL]."
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "title": "List Satu Dimensi (Array)",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Membuat & mengakses List",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Menelusuri List dengan for",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Menambah & menghapus elemen",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Mencari nilai maksimum/minimum",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: statistik nilai mahasiswa",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 10,
+            "title": "List Bersarang & Manipulasi String",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "List di dalam List (matriks)",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Iterasi baris & kolom",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Method String penting: split, substring, toUpperCase",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Membalik & memeriksa palindrom",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: pengolahan teks",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 11,
+            "title": "Fungsi & Parameter",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Mendefinisikan & memanggil fungsi",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Nilai kembalian (return)",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Parameter posisi, opsional, dan named",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Arrow function",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: pustaka fungsi matematika",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 12,
+            "title": "Scope Variabel & Rekursi",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Scope lokal vs global",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Konsep rekursi & base case",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Contoh: faktorial & Fibonacci",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Rekursi vs iterasi",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: deret rekursif",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 13,
+            "title": "Koleksi Dart: Map & Set",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Set: koleksi tanpa duplikat",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Map: pasangan key-value",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Iterasi Map dengan forEach & entries",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Kapan memakai List, Set, atau Map",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: hitung frekuensi kata",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 14,
+            "title": "Record, Class Sederhana & Operasi Berkas",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Record untuk mengelompokkan data",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Membuat class & object sederhana",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Membaca & menulis file teks",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: simpan data ke file",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 15,
+            "title": "Algoritma Searching & Sorting Dasar",
+            "is_exam": false,
+            "lessons": [
+                {
+                    "title": "Sequential search",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Binary search",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Bubble sort & selection sort",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Membandingkan efisiensi (Big-O sekilas)",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Latihan: urutkan & cari data",
+                    "type": "latihan",
+                    "xp": 15,
+                    "dartpad_gist": ""
+                }
+            ]
+        },
+        {
+            "number": 16,
+            "title": "UAS: Final Project & Code Defense",
+            "is_exam": true,
+            "lessons": [
+                {
+                    "title": "Ketentuan Final Project",
+                    "type": "materi",
+                    "xp": 10
+                },
+                {
+                    "title": "Pengumpulan Final Project",
+                    "type": "tugas",
+                    "xp": 100,
+                    "max_score": 100,
+                    "content": "## Final Project\n\nKembangkan aplikasi konsol Dart yang lebih lengkap (mis. manajemen data mahasiswa/perpustakaan/inventaris sederhana) dengan menu, penyimpanan ke berkas, serta pencarian & pengurutan data.\n\n## Yang dikumpulkan\n\n- Tautan repositori kode\n- Berkas laporan singkat (PDF): deskripsi fitur, struktur data yang dipakai, dan tangkapan layar keluaran\n\nBatas pengumpulan: [ISI TANGGAL]. Presentasi (Code Defense) sesuai jadwal."
+                },
+                {
+                    "title": "Jadwal Code Defense",
+                    "type": "materi",
+                    "xp": 10
+                }
+            ]
+        }
+    ]
+}

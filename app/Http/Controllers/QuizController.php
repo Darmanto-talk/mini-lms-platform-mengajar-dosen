@@ -7,6 +7,7 @@ use App\Jobs\ReviewQuizAttemptWithAi;
 use App\Models\Lesson;
 use App\Models\Quiz;
 use App\Models\QuizAttempt;
+use App\Services\AiGrader;
 use App\Services\Gradebook;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -155,7 +156,7 @@ class QuizController extends Controller
                 'submitted_at' => now(),
                 'score' => $score,
                 'passed' => $passed,
-                'ai_status' => (config('services.anthropic.auto_review_kuis') && $attempt->quiz->ai_feedback && filled(config('services.anthropic.key'))) ? 'pending' : 'none',
+                'ai_status' => (config('services.anthropic.auto_review_kuis') && $attempt->quiz->ai_feedback && app(AiGrader::class)->enabled()) ? 'pending' : 'none',
             ]);
 
             $attempt->quiz->lesson->completions()->firstOrCreate(['user_id' => $attempt->user_id]);

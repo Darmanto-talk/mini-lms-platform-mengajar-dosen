@@ -49,4 +49,17 @@ return [
         'auto_review_kuis' => (bool) env('AI_AUTO_REVIEW_KUIS', true),
     ],
 
+    'ai' => [
+        // penyedia aktif untuk koreksi otomatis: 'anthropic' (Claude) atau 'openai' (ChatGPT)
+        'provider' => env('AI_PROVIDER', 'anthropic'),
+    ],
+
+    'openai' => [
+        'key'        => env('OPENAI_API_KEY'),
+        'model'      => env('OPENAI_MODEL', 'gpt-4o-mini'),
+        'base_url'   => env('OPENAI_BASE_URL', 'https://api.openai.com'),
+        // kirim lampiran PDF mahasiswa ke OpenAI (hanya sebagian model mendukung)
+        'send_pdf'   => (bool) env('OPENAI_SEND_PDF', false),
+    ],
+
 ];

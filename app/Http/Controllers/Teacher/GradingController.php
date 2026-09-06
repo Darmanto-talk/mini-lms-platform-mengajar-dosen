@@ -97,7 +97,7 @@ class GradingController extends Controller
     {
         $submission->load('lesson.week.course');
         abort_unless($submission->lesson->week->course->teacher_id === $request->user()->id, 403);
-        abort_unless(app(AiGrader::class)->enabled(), 400, 'Fitur AI tidak aktif (ANTHROPIC_API_KEY belum diisi).');
+        abort_unless(app(AiGrader::class)->enabled(), 400, 'Fitur AI tidak aktif — kunci API penyedia belum diisi di .env.');
 
         $submission->update(['ai_status' => 'pending']);
         GradeAssignmentWithAi::dispatchSync($submission->id);

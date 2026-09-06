@@ -18,7 +18,7 @@ class GradePending extends Command
     public function handle(AiGrader $grader): int
     {
         if (! $grader->enabled()) {
-            $this->warn('ANTHROPIC_API_KEY belum diisi — fitur AI nonaktif.');
+            $this->warn('Kunci API penyedia AI belum diisi — fitur AI nonaktif.');
             return self::SUCCESS;
         }
 

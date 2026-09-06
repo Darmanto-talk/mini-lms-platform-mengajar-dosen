@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Concerns\StudentAccess;
 use App\Jobs\GradeAssignmentWithAi;
 use App\Models\Lesson;
+use App\Services\AiGrader;
 use Illuminate\Http\Request;
 
 class AssignmentController extends Controller
@@ -53,7 +54,7 @@ class AssignmentController extends Controller
             return back()->with('error', 'Isi jawaban teks, tautan, atau unggah berkas.');
         }
 
-        $aiOn = config('services.anthropic.auto_grade_tugas') && filled(config('services.anthropic.key'));
+        $aiOn = config('services.anthropic.auto_grade_tugas') && app(AiGrader::class)->enabled();
 
         $sub = $lesson->submissions()->updateOrCreate(
             ['user_id' => $request->user()->id],
